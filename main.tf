@@ -17,8 +17,8 @@ terraform {
 
 provider "snowflake" {
   username = "ROHIT"  
-  account  = "UXB89546"
-  private_key_path = "/root/.ssh/id_rsa"
+  account  = "UXB89546.us.east-1"
+  private_key  = file("/root/.ssh/id_rsa")
   region   = "us-east-1.aws"
 }
 
